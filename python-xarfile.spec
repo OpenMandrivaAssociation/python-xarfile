@@ -1,7 +1,7 @@
 %define oname pyxar
 %define name python-xarfile
 %define version 0.4
-%define release %mkrel 0.1
+%define release %mkrel 1
 
 Summary: Python bindings for XAR, the eXtensible ARchiver
 Name: %{name}
