@@ -36,4 +36,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{py_platsitedir}/*.so
-%{py_puresitedir}/*egg-info
+%{py_platsitedir}/*egg-info
