@@ -11,6 +11,7 @@ Source0: %{oname}-%{version}.tar.gz
 Url: http://code.google.com/p/xar
 License: BSD
 Group: Development/Python
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Provides: pyxar
 BuildRequires: libxar-devel
 BuildRequires: python-devel
