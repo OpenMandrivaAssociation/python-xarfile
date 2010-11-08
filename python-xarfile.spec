@@ -8,6 +8,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{oname}-%{version}.tar.gz
+Patch0: pyxar-0.4-fix-build.patch
 Url: http://code.google.com/p/xar
 License: BSD
 Group: Development/Python
@@ -22,7 +23,8 @@ Requires: python-base
 Python bindings for XAR, the eXtensible ARchiver.
 
 %prep
-%setup -n %{oname}-%{version}
+%setup -qn %{oname}-%{version}
+%patch0 -p0
 
 %build
 env CFLAGS="$RPM_OPT_FLAGS" python setup.py build
