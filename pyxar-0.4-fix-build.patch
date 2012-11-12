@@ -1,0 +1,15 @@
+--- xarfile.pyx.orig	2010-11-08 07:54:01.000000000 +0100
++++ xarfile.pyx	2010-11-08 07:54:24.000000000 +0100
+@@ -506,10 +506,10 @@
+ 
+ class XarInfo(object):
+ 
+-    def __init__(self, name, type = '', mode = '', uid = '', user = '',
++    def __init__(self, name, mtype = '', mode = '', uid = '', user = '',
+             gid = '', group = '', atime = '', mtime = '', ctime = ''): 
+         self.name = name
+-        self.type = type
++        self.type = mtype
+         self.mode = mode
+         self.uid = uid
+         self.user = user
