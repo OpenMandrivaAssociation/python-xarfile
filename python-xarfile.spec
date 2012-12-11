@@ -39,3 +39,23 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{py_platsitedir}/*.so
 %{py_platsitedir}/*egg-info
+
+
+%changelog
+* Mon Nov 08 2010 Funda Wang <fwang@mandriva.org> 0.4-5mdv2011.0
++ Revision: 594942
+- rebuild for py 2.7
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue May 29 2007 Bogdano Arendartchuk <bogdano@mandriva.com> 0.4-2mdv2008.0
++ Revision: 32636
+- force rebuild, as it failed in x86-64
+- Import python-xarfile
+
