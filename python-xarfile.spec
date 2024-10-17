@@ -9,7 +9,7 @@ Version: %{version}
 Release: %{release}
 Source0: %{oname}-%{version}.tar.gz
 Patch0: pyxar-0.4-fix-build.patch
-Url: http://code.google.com/p/xar
+Url: https://code.google.com/p/xar
 License: BSD
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
